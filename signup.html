@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Sign Up Page </title>
+</head>
+<body>
+<h2>Create a New Account </h2>
+<form action="/signup-endpoint" method="POST">
+<div>
+<label for="full-name">Full Name </label>
+<input type="text" id="full-name" name="fullname" placeholder="Enter your full name" required>
+</div>
+<br>
+<div>
+<label for="confirm-password">Confirm Password </label>
+<input type="password" id="confirm-password" name="confirm" placeholder="Repeat your password" re
+quired>
+</div>
+<div>
+<label for="terms">
+<input type="checkbox" name="terms" required> I agree to the terms and conditions
+</label>
+</div>
+<br>
+<button type="submit">Sign Up </button>
+</form>
+</body>
+</html>

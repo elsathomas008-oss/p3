@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SupplyBridge Registration</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h3> SupplyBridge Form </h3>
+
+    <form action="submit_form" method="post">
+        <table>
+            <tr>
+  <td><label for="name">First Name</label></td>
+   <td><input type="text" id="name" name="name" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+    <td><label for="namelast">Last Name</label></td>
+        <td><input type="text" id="namelast" name="name" placeholder="Enter your last name" required></td>
+            </tr>
+
+            <tr>
+         <td colspan="2"><b>Address</b></td>
+            </tr>
+            <tr>
+     <td><label for="street">Number & Street</label></td>
+    <td><input type="text" id="street" name="noandstreet"></td>
+            </tr>
+            <tr>
+        <td><label for="city">City</label></td>
+        <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+       <td><label for="state">State</label></td>
+    <td><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+     <td><label for="booking">Check-in date</label></td>
+       <td><input type="date" id="booking" name="booking" min="2026-08-18" max="2030-08-18"></td>
+            </tr>
+            <tr>
+        <td><label for="booking2">Check-out date</label></td>
+       <td><input type="date" id="booking2" name="booking2" min="2026-08-18" max="2030-08-18"></td>
+            </tr>
+
+            <tr>
+        <td><label for="phone">Phone:</label></td>
+       <td><input type="tel" name="tel" id="phone" placeholder="( #)- # #"></td>
+            </tr>
+            <tr>
+       <td><label for="email2">E-mail Address</label></td>
+         <td><input type="email" name="email1" id="email2" placeholder="name@domain.com"></td>
+            </tr>
+            <tr>
+         <td><label for="payment">Payment Method</label></td>
+        <td><select id="payment" name="payment" required>
+    <option value="" disabled selected>Select a payment method</option>
+    <option value="credit_card">Credit / Debit Card</option>
+    <option value="upi">UPI</option>
+    <option value="net_banking">Net Banking</option>
+    <option value="paypal">PayPal</option>
+    <option value="cod">Cash on Delivery</option>
+  </select></td>
+            </tr>
+            <tr>
+                <td><label for="card">Card Number</label></td>
+                <td><input type="text" name="card" id="card"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;"><label for="req3"><b>Special Requests</b></label></td>
+                <td><textarea name="req1" id="req3" rows="5" cols="50" placeholder="Enter your report here"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <button type="reset">Clear Form</button>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+    <p>Already have an account? Log in</p>
+    <form action="login.html" method="get">
+        <button type="submit">Log In</button>
+    </form>
+
+    <p> Don't have an account? Sign up</p>
+    <form action="signup.html" method="get">
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+    </form>
+
+</body>
+</html>
